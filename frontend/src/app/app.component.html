@@ -1,0 +1,19 @@
+<div class="full-screen-container">
+  <div class="row">
+    <div class="col-md-12">
+      <div *ngIf="!isAuth">
+        <app-login (authChange)="onAuthChange($event)"></app-login>
+      </div>
+      <div *ngIf="isAuth">
+        <div *ngIf="!username; else content" class="text-center">
+          <div class="spinner-border" role="status">
+            <span class="sr-only">Loading...</span>
+          </div>
+        </div>
+        <ng-template #content>
+          <app-dashboard [username]="username"></app-dashboard>
+        </ng-template>
+      </div>
+    </div>
+  </div>
+</div>

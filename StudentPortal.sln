@@ -1,0 +1,45 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.5.002.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "backend", "backend\backend.csproj", "{93AA1C7F-FE4E-4374-AE0C-878205DA9D33}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "backend (1)", "backend", "{BC41B71D-89D9-4923-9A78-3A19A7C956A8}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "obj", "obj", "{A03438DB-875E-4C85-8527-79DA465866EC}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Debug", "Debug", "{82EE7A3F-716D-44D6-8F27-7CB4F04D0FA4}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "net8.0", "net8.0", "{AA3943A6-5FE8-44A8-B6FE-32BEB95291B7}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WorkerExtensions", "backend\obj\Debug\net8.0\WorkerExtensions\WorkerExtensions.csproj", "{98A9E317-E7D2-4A23-AC39-70CD21A910EE}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{93AA1C7F-FE4E-4374-AE0C-878205DA9D33}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{93AA1C7F-FE4E-4374-AE0C-878205DA9D33}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{93AA1C7F-FE4E-4374-AE0C-878205DA9D33}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{93AA1C7F-FE4E-4374-AE0C-878205DA9D33}.Release|Any CPU.Build.0 = Release|Any CPU
+		{98A9E317-E7D2-4A23-AC39-70CD21A910EE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{98A9E317-E7D2-4A23-AC39-70CD21A910EE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{98A9E317-E7D2-4A23-AC39-70CD21A910EE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{98A9E317-E7D2-4A23-AC39-70CD21A910EE}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{A03438DB-875E-4C85-8527-79DA465866EC} = {BC41B71D-89D9-4923-9A78-3A19A7C956A8}
+		{82EE7A3F-716D-44D6-8F27-7CB4F04D0FA4} = {A03438DB-875E-4C85-8527-79DA465866EC}
+		{AA3943A6-5FE8-44A8-B6FE-32BEB95291B7} = {82EE7A3F-716D-44D6-8F27-7CB4F04D0FA4}
+		{98A9E317-E7D2-4A23-AC39-70CD21A910EE} = {AA3943A6-5FE8-44A8-B6FE-32BEB95291B7}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {85250D36-B1B8-4B18-AD2E-9C2E38F4FC80}
+	EndGlobalSection
+EndGlobal

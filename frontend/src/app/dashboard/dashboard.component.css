@@ -1,0 +1,78 @@
+.dashboard-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  margin-top: 20px; /* Adjust as needed */
+}
+
+.registered-modules,
+.registration-card {
+  width: 90%;
+  margin-bottom: 20px; /* Adjust as needed */
+}
+
+.user-card,
+.module-card,
+.registration-card {
+  margin-bottom: 20px; /* Adjust as needed */
+}
+
+.user-card {
+  background-color: #f0f0f0; /* Light gray background */
+}
+
+.module-card {
+  background-color: #ffffff; /* White background */
+}
+
+.registration-card {
+  background-color: #e0e0e0; /* Lighter gray background */
+}
+
+.module-item {
+  border-bottom: 1px solid #cccccc; /* Gray border between items */
+}
+
+.mat-form-field {
+  width: 100%;
+}
+/* dashboard.component.css */
+
+.loader-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* Ensures loader covers the entire screen */
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.7); /* Semi-transparent background */
+}
+/* Add styling to the enrolled modules table */
+.enrolled-modules-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+.enrolled-modules-table th,
+.enrolled-modules-table td {
+  border: 1px solid #dddddd;
+  padding: 8px;
+  text-align: left;
+}
+
+.enrolled-modules-table th {
+  background-color: #f2f2f2;
+}
+
+.enrolled-modules-table tbody tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+.enrolled-modules-table tbody tr:hover {
+  background-color: #f2f2f2;
+}
+

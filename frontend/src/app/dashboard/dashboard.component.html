@@ -1,0 +1,68 @@
+<div class="dashboard-container">
+  <!-- Registered Modules and User Details -->
+  <div class="registered-modules">
+    <mat-card class="user-card">
+      <mat-card-header>
+        <mat-card-title>Welcome, {{ userEnrolment.User.Name +' '+ userEnrolment.User.Surname }}!</mat-card-title>
+        <mat-card-subtitle>Student ID: {{ userEnrolment.User.Username }}</mat-card-subtitle>
+      </mat-card-header>
+      <mat-card-content>
+        <p><strong>Role:</strong> {{ role }}</p>
+      </mat-card-content>
+    </mat-card>
+    <mat-card class="module-card">
+      <mat-card-header>
+        <mat-card-title>Registered Modules</mat-card-title>
+      </mat-card-header>
+      <mat-card-content>
+        <table class="enrolled-modules-table">
+          <thead>
+            <tr>
+              <th>Module Code</th>
+              <th>Lecturer</th>
+              <th>Semester</th>
+              <th>Semester Mark</th>
+              <th>Exam Mark</th>
+              <th>Final Mark</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr *ngFor="let module of enrolledModules">
+              <td>{{ module.ModuleId }}</td>
+              <td>{{ module.Lecturer }}</td>
+              <td>{{ module.Semester }}</td>
+              <td>{{ module.SemesterMark }}</td>
+              <td>{{ module.ExamMark }}</td>
+              <td>{{ module.FinalMark }}</td>
+            </tr>
+          </tbody>
+        </table>
+      </mat-card-content>
+    </mat-card>
+  </div>
+
+  <!-- Available Modules for Registration -->
+  <mat-card class="registration-card">
+    <mat-card-header>
+      <mat-card-title>Module Registration</mat-card-title>
+    </mat-card-header>
+    <mat-card-content>
+      <ng-container *ngIf="isLoading; else registrationFormContent">
+        <mat-spinner diameter="40"></mat-spinner>
+      </ng-container>
+      <ng-template #registrationFormContent>
+        <form [formGroup]="registrationForm" (ngSubmit)="registerModules()">
+          <mat-form-field style="width: 100%;">
+            <mat-label>Select Modules</mat-label>
+            <mat-select multiple formControlName="selectedModules">
+              <mat-option *ngFor="let module of availableModules" [value]="module">
+                {{ module.Code }} - {{ module.Name }}
+              </mat-option>
+            </mat-select>
+          </mat-form-field>
+          <button mat-raised-button color="primary" type="submit">Register Modules</button>
+        </form>
+      </ng-template>
+    </mat-card-content>
+  </mat-card>
+</div>
